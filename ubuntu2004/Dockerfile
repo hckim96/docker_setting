@@ -15,6 +15,12 @@ RUN apt-get update
 RUN apt-get install -y apt-utils 
 RUN apt-get -y install sudo
 RUN apt-get install -y vim git x11-apps
+RUN apt-get install wget
+RUN apt-get install gcc g++ gdb tree -y
+RUN apt-get install build-essential -y
+RUN apt install libssl-dev
+RUN apt-get install curl -y
+
 # RUN apt-get install -y python3 python3-dev python3-setuptools gcc libtinfo-dev zlib1g-dev build-essential cmake libedit-dev libxml2-dev
 # RUN apt-get install -y llvm  
 # RUN apt-get install -y libgl1-mesa-glx 
