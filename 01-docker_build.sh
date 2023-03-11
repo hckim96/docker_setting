@@ -6,4 +6,6 @@ DOCKER_PASSWD='1234'
 # docker build -t cu11-4_nn8_2004 cuda_11-4_cudnn8_ubuntu2004 --build-arg ARG_PASSWD=${DOCKER_PASSWD} --build-arg ARG_USER_ID=${DOCKER_USER}
 #docker build -t l4t_tf_291 jetson_r35_5-0-2-tf --build-arg ARG_PASSWD=${DOCKER_PASSWD} --build-arg ARG_USER_ID=${DOCKER_USER}
 
-docker build -t ubuntu2004 ubuntu2004 --build-arg ARG_PASSWD=${DOCKER_PASSWD} --build-arg ARG_USER_ID=${DOCKER_USER}
+# docker build -t ubuntu2004 ubuntu2004 --build-arg ARG_PASSWD=${DOCKER_PASSWD} --build-arg ARG_USER_ID=${DOCKER_USER}
+
+docker build -t cu10-2_nn8_1804 cuda_10-2_cudnn8_ubuntu1804 --build-arg ARG_PASSWD=${DOCKER_PASSWD} --build-arg ARG_USER_ID=${DOCKER_USER}
